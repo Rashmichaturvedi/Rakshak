@@ -1,0 +1,72 @@
+<html lang="en" dir="ltr">
+    <head>
+        <meta charset="utf-8">
+        <title>User Register</title>
+        <link rel="stylesheet" href="style1.css" type="text/css">
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js" charset="utf-8"></script>
+    </head>
+    <body>
+        <form action="Userregister.html" class="ll">
+            <img src="99.jpg" alt="error">
+			<h3  align="center"> <b> <u> User Register </u> </b></h3>
+            <div class="lo">
+                <input type="number" name="Vnum" required>
+                <span data-placeholder="Enter vehicle number"></span>
+            </div>
+			 <div class="lo">
+                <input type="text" name="uname" required>
+                <span data-placeholder="Enter your name"></span>
+            </div>
+			<div class="lo">
+                <input type="number" name="uadhar" required>
+                <span data-placeholder="Enter your adhar number"></span>
+            </div>
+
+            <div class="lo">
+                <input type="text" name="uaddress" required>
+                <span data-placeholder="Enter your address"></span>
+            </div>
+			 <div class="lo">
+                <input type="number" name="upin" required>
+                <span data-placeholder="pincode"></span>
+            </div>
+
+            <div class="lo">
+                <input type="text" name="ustate" required>
+                <span data-placeholder="state"></span>
+            </div>
+			<div class="lo">
+                <input type="number" name="mnum" required>
+                <span data-placeholder="Phone-number"></span>
+            </div>
+			<div class="lo">
+                <input type="email" name="memail" required>
+                <span data-placeholder="Enter email" ></span>
+            </div>
+			<div class="lo">
+                <input type="password" name="mpsswrd" required>
+                <span data-placeholder="Enter password" ></span>
+            </div>
+			<div class="lo">
+                <input type="password" name="mconpsswrd" required>
+                <span data-placeholder="Confirm password" ></span>
+            </div>
+
+              
+            <input type="submit" class="lp">
+
+        </form>
+
+
+        <script type="text/javascript">
+            $(".lo input").on("focus",function(){
+                $(this).addClass("focus");
+            });
+
+            $(".lo input").on("blur",function(){
+                if($(this).val() == "")
+                $(this).removeClass("focus");
+            });
+        </script>
+    </body>
+</html>

@@ -1,0 +1,94 @@
+*{
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    font-family: sans-serif;
+}
+body{
+	
+    min-height: 170vh;
+    background-image:url("01.png");
+    background-attachment: fixed;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.ll{
+    width: 360px;
+    background: #f1f1f1;
+    height: 750px;
+    padding: 60px 40px;
+    border-radius: 10px;
+    position: absolute;
+    left: 50%;
+    top: 70%;
+    transform: translate(-50%,-50%);
+}
+.ll h1{
+    text-align: center;
+    margin-bottom: 60px;
+    font-variant: small-caps;
+    font-size: 40px;
+}
+.lo{
+    border-bottom: 2px solid #adadad;
+    position: relative;
+    margin: 10px 0;
+}
+.lo input{
+    font-size: 15px;
+    color: #333;
+    border: none;
+    width: 100%;
+    outline: none;
+    background: none;
+    padding: 0 2px;
+    height: 40px;
+}
+.lo span::before{
+    content: attr(data-placeholder);
+    position: absolute;
+    top: 50%;
+    left: 5px;
+    color: #adadad;
+    transform: translateY(-50%);
+    z-index: -1;
+    transition: .5s;
+}
+.lo span::after{
+    content: '';
+    position: absolute;
+    width: 0%;
+    height: 2px;
+    background: linear-gradient(120deg,#99FFCC,#3366ff);
+    transition: .5s;
+}
+.focus+span::before{
+    top: -5px;
+}
+.focus+span::after{
+    width: 100%;
+}
+.lp{
+    width: 150px;
+    height: 40px;
+    border: none;
+    outline: none;
+    background: linear-gradient(120deg,#99FFCC,#3366ff,#99FFCC);
+    background-size: 200%;
+    color: aliceblue;
+    transition: 1.0s;
+    position: absolute;
+    left: 50%;
+    border-radius: 24px;
+}
+.lp:hover{
+    width: 200;
+    border: 2px solid #99FFCC;
+    background-position: right;   
+}
+.ll img{
+    width: 200px;
+    position: relative;
+    left: 20%;
+
+}
