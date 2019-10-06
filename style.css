@@ -1,0 +1,64 @@
+body{
+    background-image: url('01.png');
+    background-attachment: fixed;
+    background-size: cover;
+
+}
+.lp{
+    width: 360px;
+    padding: 10% 0 0;
+    margin: auto;
+}
+.fo{
+    position: relative;
+    z-index: 1;
+    background: rgba(0,0,37, 0.9);
+    max-width: 360px;
+    margin: 0 auto 100px;
+    padding: 60px;
+    text-align: center;
+    display: block;
+}
+.fo input{
+    font-family: "roboto",sans-serif;
+    outline: 0;
+    width: 100%;
+    background: none;
+    border: 2px solid rgba(0, 255, 0, 0.4);
+    border-radius: 24px;
+    margin: 0 0 15px;
+    box-sizing: border-box;
+    font-size: 14px;
+    padding: 14px 50px;
+    text-align: center;
+    color: #FFF;
+}
+.fo button{
+    font-family: "roboto", sans-serif;
+    text-transform: uppercase;
+    outline: none;
+   /* background: linear-gradient(120deg,rgba(20%,80%,100%,0.4),rgba(80%,100%,20%,0.4));*/
+      background: linear-gradient(120deg,#99FFCC,#3366ff,#99FFCC);
+    width: 50%;
+    border: none;
+    padding: 13px;
+    color: #FFF;
+    font-size: 14px;
+    cursor: pointer;
+    border-radius: 24px;
+}
+.fo button:hover, .fo button:active{
+    width: 80%;
+}
+.fo .me{
+    font-family: "roboto",sans-serif;
+    color: aliceblue;
+}
+.fo .me a{
+    text-decoration: none;
+    color: #0f0;
+    font-size: 14px; 
+}
+.fo .rf{
+    display: none;
+}
